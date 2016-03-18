@@ -1,7 +1,12 @@
-(function(){
+// DO NOT WRAP (function(){}); AROUND JAVASCRIPT CODE
+$(document).ready(function(){
   // JQuery goodness
-  alert('connected!!');
+  $('input').on('click', function(){
+    alert('connected!!');
+  });
   window.onload = function() {
-    document.getElementById('loader').style.opacity = '0';
+    setTimeout( function(){
+      $('#loader').fadeOut();
+    }, 300);
   };
 });

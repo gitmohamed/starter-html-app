@@ -1,0 +1,132 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt',
+1 verbose cli   'grunt-contrib-uglifyjs',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.5.1
+3 info using node@v4.2.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grunt@^0.4.5
+8 silly fetchPackageMetaData grunt-contrib-uglifyjs
+9 silly fetchNamedPackageData grunt
+10 silly mapToRegistry name grunt
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/grunt
+14 silly fetchNamedPackageData grunt-contrib-uglifyjs
+15 silly mapToRegistry name grunt-contrib-uglifyjs
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-uglifyjs
+19 verbose request uri https://registry.npmjs.org/grunt-contrib-uglifyjs
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 11:46:21 PM
+22 verbose request id 74a36f6d0d1b7fe7
+23 http request GET https://registry.npmjs.org/grunt-contrib-uglifyjs
+24 verbose request uri https://registry.npmjs.org/grunt
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 11:46:21 PM
+27 verbose etag "4VPF8Z2KKBOYJEKEAI0LUBD91"
+28 http request GET https://registry.npmjs.org/grunt
+29 http 304 https://registry.npmjs.org/grunt
+30 verbose headers { date: 'Fri, 18 Mar 2016 06:46:21 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'cache-control': 'max-age=300',
+30 verbose headers   etag: '"4VPF8Z2KKBOYJEKEAI0LUBD91"',
+30 verbose headers   age: '296',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+30 verbose headers   'x-cache': 'HIT',
+30 verbose headers   'x-cache-hits': '2',
+30 verbose headers   'x-timer': 'S1458283581.626790,VS0,VE0',
+30 verbose headers   vary: 'Accept' }
+31 silly get cb [ 304,
+31 silly get   { date: 'Fri, 18 Mar 2016 06:46:21 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     'cache-control': 'max-age=300',
+31 silly get     etag: '"4VPF8Z2KKBOYJEKEAI0LUBD91"',
+31 silly get     age: '296',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-sjc3132-SJC',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '2',
+31 silly get     'x-timer': 'S1458283581.626790,VS0,VE0',
+31 silly get     vary: 'Accept' } ]
+32 verbose etag https://registry.npmjs.org/grunt from cache
+33 verbose get saving grunt to /Users/Mohamed/.npm/registry.npmjs.org/grunt/.cache.json
+34 http 404 https://registry.npmjs.org/grunt-contrib-uglifyjs
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=0',
+35 verbose headers   'content-length': '2',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Fri, 18 Mar 2016 06:46:21 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '0',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-sjc3132-SJC',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1458283581.569325,VS0,VE94' }
+36 silly get cb [ 404,
+36 silly get   { 'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=0',
+36 silly get     'content-length': '2',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Fri, 18 Mar 2016 06:46:21 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '0',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-sjc3132-SJC',
+36 silly get     'x-cache': 'MISS',
+36 silly get     'x-cache-hits': '0',
+36 silly get     'x-timer': 'S1458283581.569325,VS0,VE94' } ]
+37 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-uglifyjs
+37 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+37 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+37 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+37 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+37 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+37 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+37 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 silly fetchPackageMetaData  error for grunt-contrib-uglifyjs { [Error: Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-uglifyjs]
+37 silly fetchPackageMetaData   pkgid: 'grunt-contrib-uglifyjs',
+37 silly fetchPackageMetaData   statusCode: 404,
+37 silly fetchPackageMetaData   code: 'E404' }
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-uglifyjs
+43 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+43 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+43 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+43 verbose stack     at emitTwo (events.js:87:13)
+43 verbose stack     at Request.emit (events.js:172:7)
+43 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+43 verbose stack     at emitOne (events.js:82:20)
+43 verbose stack     at Request.emit (events.js:169:7)
+43 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+44 verbose statusCode 404
+45 verbose pkgid grunt-contrib-uglifyjs
+46 verbose cwd /Users/Mohamed/Desktop/Sandbox/PROJECTS/starter-app-template
+47 error Darwin 15.3.0
+48 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt" "grunt-contrib-uglifyjs" "--save-dev"
+49 error node v4.2.3
+50 error npm  v3.5.1
+51 error code E404
+52 error 404 Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-uglifyjs
+53 error 404
+54 error 404 'grunt-contrib-uglifyjs' is not in the npm registry.
+55 error 404 You should bug the author to publish it (or use the name yourself!)
+56 error 404 Note that you can also install from a
+57 error 404 tarball, folder, http url, or git url.
+58 verbose exit [ 1, true ]

@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         // the banner is inserted at the top of the output
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
-      dist: {
+      my_target: {
         files: {
           'dist/js/<%= pkg.name %>.min.js': ['./scripts/*.js']
         }

@@ -7,7 +7,8 @@ app.set('views', 'views/');
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-  res.render('index', {title: 'Mohamed.Design'});
+  var loggedIn = false;
+  res.render('index', {title: 'Starter App', loggedIn: loggedIn});
 });
 
 app.listen(3003, function () {
