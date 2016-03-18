@@ -2,13 +2,13 @@
   "name": "starter-app-template",
   "version": "1.0.0",
   "description": "",
-  "main": "inhex.ejs",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gitmohamed/starter-html-app.git"
+    "url": "https://github.com/gitmohamed/starter-html-app.git"
   },
   "author": "Mohamed Hassan",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "express": "^4.13.4",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
