@@ -1,16 +1,15 @@
-var express = require('express');
-var ejs = require('ejs');
-var app = express();
+const express = require('express')
+const ejs = require('ejs')
+const app = express()
 
-app.set('view engine', 'ejs');
-app.set('views', 'views/');
-app.use(express.static('dist'));
+app.set('view engine', 'ejs')
+app.set('views', 'views/')
+app.use(express.static('dist'))
 
-app.get('/', function (req, res) {
-  var loggedIn = false;
-  res.render('index', {title: 'Starter App', loggedIn: loggedIn});
-});
+app.get('/', (req, res) => {
+  res.render('index', {title: 'Mohamed Hassan'})
+})
 
-app.listen(3003, function () {
-  console.log('Example app listening on port 3003!');
-});
+app.listen(3003, () => {
+  console.log('Example app listening on port 3003!')
+})
