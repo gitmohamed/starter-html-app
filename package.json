@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "ejs": "^2.4.1",
-    "jquery": "^2.2.2"
+    "jquery": "^3.5.0"
   }
 }
